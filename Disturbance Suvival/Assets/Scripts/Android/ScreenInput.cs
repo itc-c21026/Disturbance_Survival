@@ -2,6 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*-------------------------------------
+スワイプ操作のプログラム
+-------------------------------------*/
+
 public class ScreenInput : MonoBehaviour
 {
     // スワイプ最小移動距離

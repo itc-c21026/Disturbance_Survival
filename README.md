@@ -7,7 +7,7 @@
 ・花城英斗 / 2Dデザイナー・その他データ管理  
 
 ## ファイル構成
-・Disturbance Survival
+・[Unityデータ](https://github.com/itc-c21026/Disturbance_Survival/tree/main/Disturbance%20Suvival)
 
 ## 概要
 
@@ -15,8 +15,8 @@
 非対称対人脱出ゲーム
 
 ## プラットフォーム
-・Android
-・Windows
+・[Android](https://github.com/itc-c21026/Disturbance_Survival/blob/main/Disturbance%20Suvival/DIsturbance_Survival.apk)  
+・[Windows](https://github.com/itc-c21026/Disturbance_Survival/blob/main/Disturbance%20Suvival/Disturbance_Survival_Windows.zip)
 
 ## 使用言語
 C#

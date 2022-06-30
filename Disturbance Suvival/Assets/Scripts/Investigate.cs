@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/*------------------------------------
+調べる行為のシステムのプログラム
+------------------------------------*/
+
 public class Investigate : MonoBehaviour
 {
 

@@ -22,7 +22,9 @@
 C#
 
 ## 主なプログラム
-UI
+・[レーダーマップにアイコンを表示させるプログラム](https://github.com/itc-c21026/Disturbance_Survival/blob/main/Disturbance%20Suvival/Assets/Scripts/Icon.cs)  
+・[アイテムを制御するプログラム](https://github.com/itc-c21026/Disturbance_Survival/blob/main/Disturbance%20Suvival/Assets/Scripts/GetItem.cs)  
+・[アイテム使用時のプログラム](https://github.com/itc-c21026/Disturbance_Survival/blob/main/Disturbance%20Suvival/Assets/Scripts/ItemUse.cs)
 
 ## ゲームルール  
 ・全般  

@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/*------------------------------------------
+CSVを元にマップを作るプログラム
+プレイヤーやエネミーの初期配置など
+------------------------------------------*/
+
 public class MapCreateScript : MonoBehaviour
 {
     [SerializeField] private CSVDataReader CSVSC;

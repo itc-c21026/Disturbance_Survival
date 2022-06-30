@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /*----------------------------------------------
- ƒ~ƒjƒ}ƒbƒv‚ÉƒIƒuƒWƒFƒNƒg‚ğ•\¦‚³‚¹‚éƒvƒƒOƒ‰ƒ€
+ ãƒŸãƒ‹ãƒãƒƒãƒ—ã«ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¡¨ç¤ºã•ã›ã‚‹ãƒ—ãƒ­ã‚°ãƒ©ãƒ 
 ----------------------------------------------*/
 
 public class Icon2 : MonoBehaviour
 {
     [SerializeField] Camera miniCamera;
-    [SerializeField] Transform iconTarget;@// ‘ÎÛƒAƒCƒRƒ“‚ÌÀ•W
-    [SerializeField] Transform IconT; // ƒAƒCƒRƒ“‚ÌeƒIƒuƒWƒFƒNƒg‚ÌÀ•W
+    [SerializeField] Transform iconTarget;ã€€// å¯¾è±¡ã‚¢ã‚¤ã‚³ãƒ³ã®åº§æ¨™
+    [SerializeField] Transform IconT; // ã‚¢ã‚¤ã‚³ãƒ³ã®è¦ªã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®åº§æ¨™
     [SerializeField] float rangeRadiusOffset = 1.0f;
 
     SpriteRenderer spriteRenderer;
@@ -20,7 +20,7 @@ public class Icon2 : MonoBehaviour
     const float normalAlpha = 1.0f;
     const float outRangeAlpha = 0.5f;
 
-    // ƒXƒP[ƒ‹’²®
+    // ã‚¹ã‚±ãƒ¼ãƒ«èª¿æ•´
     [SerializeField] int scl = 3;
     [SerializeField] float sclb = 8.9f;
     [SerializeField] int minSize = 4;
@@ -62,8 +62,9 @@ public class Icon2 : MonoBehaviour
         var centerPos = new Vector3(miniCamera.transform.position.x, miniCamera.transform.position.y, defaultPosZ);
         var offset = iconPos - centerPos;
         iconTarget.transform.position = centerPos + Vector3.ClampMagnitude(offset, minimapRangeRadius - rangeRadiusOffset);
-
-        // ‰E‚É‚¢‚é
+        
+        // ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã¨ã‚¢ã‚¤ã‚³ãƒ³ã®è¦ªã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒé›¢ã‚Œã‚‹ã»ã©ã‚¢ã‚¤ã‚³ãƒ³ãŒå°ã•ããªã‚‹        
+        // å³ã«ã„ã‚‹æ™‚
         if (offset.x <= 0)
         {
             if (offset.x > offset.y)
@@ -99,7 +100,7 @@ public class Icon2 : MonoBehaviour
             }
         }
 
-        // ¶‚É‚¢‚é
+        // å·¦ã«ã„ã‚‹æ™‚
         if (offset.x > 0)
         {
             if (offset.x < offset.y)

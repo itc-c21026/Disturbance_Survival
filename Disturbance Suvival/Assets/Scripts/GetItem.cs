@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/*------------------------------------
+アイテムを制御するプログラム
+------------------------------------*/
+
 public class GetItem : MonoBehaviour
 {
     [SerializeField, Label("プレイヤースクリプト")] private PlayerController PlayerSC;

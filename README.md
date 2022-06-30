@@ -48,3 +48,8 @@ Unity 2020.3.4f1
 2022年 5・6月 (2ヶ月)
 
 ## スクリーンショット
+![ScreenShot1](https://github.com/itc-c21026/Disturbance_Survival/blob/main/ScreenShot/Title.png)
+![ScreenShot2](https://github.com/itc-c21026/Disturbance_Survival/blob/main/ScreenShot/Lobby.png)
+![ScreenShot3](https://github.com/itc-c21026/Disturbance_Survival/blob/main/ScreenShot/GamePlay.png)
+![ScreenShot4](https://github.com/itc-c21026/Disturbance_Survival/blob/main/ScreenShot/GamePlayWindows.png)
+![ScreenShot5](https://github.com/itc-c21026/Disturbance_Survival/blob/main/ScreenShot/WinResult.png)

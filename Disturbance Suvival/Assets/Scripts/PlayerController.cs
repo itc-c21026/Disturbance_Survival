@@ -2,6 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
+/*------------------------------------------
+プレイヤーを制御するプログラム
+プレイヤー関連のプログラム
+------------------------------------------*/
+
 public class PlayerController : MonoBehaviour
 {
 

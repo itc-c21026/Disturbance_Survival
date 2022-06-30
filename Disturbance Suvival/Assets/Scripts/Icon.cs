@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 /*----------------------------------------------
- ƒ~ƒjƒ}ƒbƒv‚ÉƒIƒuƒWƒFƒNƒg‚ğ•\¦‚³‚¹‚éƒvƒƒOƒ‰ƒ€
+ ãƒŸãƒ‹ãƒãƒƒãƒ—ã«ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’è¡¨ç¤ºã•ã›ã‚‹ãƒ—ãƒ­ã‚°ãƒ©ãƒ 
 ----------------------------------------------*/
 
 public class Icon : MonoBehaviour
 {
-    [SerializeField , Label("ƒ~ƒjƒ}ƒbƒv—pƒJƒƒ‰")] Camera miniCamera;
-    [SerializeField , Label("‘ÎÛƒAƒCƒRƒ“")] Transform iconTarget;@// ‘ÎÛƒAƒCƒRƒ“‚ÌÀ•W
-    [SerializeField , Label("‘ÎÛƒAƒCƒRƒ“‚ÌeƒIƒuƒWƒFƒNƒg")] Transform IconT; // ƒAƒCƒRƒ“‚ÌeƒIƒuƒWƒFƒNƒg‚ÌÀ•W
-    [SerializeField , Label("ƒIƒtƒZƒbƒg")] float rangeRadiusOffset = 1.0f;
+    [SerializeField , Label("ãƒŸãƒ‹ãƒãƒƒãƒ—ç”¨ã‚«ãƒ¡ãƒ©")] Camera miniCamera;
+    [SerializeField , Label("å¯¾è±¡ã‚¢ã‚¤ã‚³ãƒ³")] Transform iconTarget;ã€€// å¯¾è±¡ã‚¢ã‚¤ã‚³ãƒ³ã®åº§æ¨™
+    [SerializeField , Label("å¯¾è±¡ã‚¢ã‚¤ã‚³ãƒ³ã®è¦ªã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ")] Transform IconT; // ã‚¢ã‚¤ã‚³ãƒ³ã®è¦ªã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®åº§æ¨™
+    [SerializeField , Label("ã‚ªãƒ•ã‚»ãƒƒãƒˆ")] float rangeRadiusOffset = 1.0f;
 
     SpriteRenderer spriteRenderer;
 
@@ -20,7 +20,7 @@ public class Icon : MonoBehaviour
     const float normalAlpha = 1.0f;
     const float outRangeAlpha = 0.5f;
 
-    // ƒXƒP[ƒ‹’²®
+    // ã‚¹ã‚±ãƒ¼ãƒ«èª¿æ•´
     [SerializeField] int scl = 3;
     [SerializeField] float sclb = 8.9f;
     [SerializeField] int minSize = 4;
@@ -63,19 +63,20 @@ public class Icon : MonoBehaviour
         var offset = iconPos - centerPos;
         iconTarget.transform.position = centerPos + Vector3.ClampMagnitude(offset, minimapRangeRadius - rangeRadiusOffset);
 
-        // ƒvƒŒƒCƒ„[‚ª‰E‚É‚¢‚é
+        // ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã¨ã‚¢ã‚¤ã‚³ãƒ³ã®è¦ªã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆãŒé›¢ã‚Œã‚‹ã»ã©ã‚¢ã‚¤ã‚³ãƒ³ãŒå°ã•ããªã‚‹
+        // ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãŒå³ã«ã„ã‚‹æ™‚
         if (offset.x <= 0)
         {
-            if (offset.x > offset.y) // ƒvƒŒƒCƒ„[‚ª‰Eã‚É‚¢‚é
+            if (offset.x > offset.y) // ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãŒå³ä¸Šã«ã„ã‚‹æ™‚
             {
                 iconTarget.transform.localScale = new Vector3(offset.y / scl + sclb, offset.y / scl + sclb, 1);
-                // ƒAƒCƒRƒ“‚Æ—£‚ê‚·‚¬‚Ä‚àminSize‚Ì‚Ü‚Ü•\¦
+                // ã‚¢ã‚¤ã‚³ãƒ³ã¨é›¢ã‚Œã™ãã¦ã‚‚minSizeã®ã¾ã¾è¡¨ç¤º
                 if (iconTarget.transform.localScale.x <= -minSize)
                 {
                     iconTarget.transform.localScale = new Vector3(minSize, minSize, 1);
                 }
             }
-            else if (-offset.x < offset.y) // ƒvƒŒƒCƒ„[‚ª‰E‰º‚É‚¢‚é
+            else if (-offset.x < offset.y) // ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãŒå³ä¸‹ã«ã„ã‚‹æ™‚
             {
                 iconTarget.transform.localScale = new Vector3(offset.y / scl - sclb, offset.y / scl - sclb, 1);
                 if (iconTarget.transform.localScale.x >= minSize)
@@ -83,7 +84,7 @@ public class Icon : MonoBehaviour
                     iconTarget.transform.localScale = new Vector3(minSize, minSize, 1);
                 }
             }
-            else // ‚»‚êˆÈŠO
+            else // ãã‚Œä»¥å¤–
             {
                 iconTarget.transform.localScale = new Vector3(offset.x / scl + sclb, offset.x / scl + sclb, 1);
                 if (iconTarget.transform.localScale.x <= -minSize)
@@ -93,7 +94,7 @@ public class Icon : MonoBehaviour
             }
 
             var s = iconTarget.transform.localScale;
-            // ƒAƒCƒRƒ“‚ªminSize‚æ‚è¬‚³‚­‚È‚ç‚È‚¢
+            // ã‚¢ã‚¤ã‚³ãƒ³ãŒminSizeã‚ˆã‚Šå°ã•ããªã‚‰ãªã„
             if (s.x < minSize && s.x > -minSize)
             {
                 s = new Vector3(minSize, minSize, 1);
@@ -101,10 +102,10 @@ public class Icon : MonoBehaviour
             }
         }
 
-        // ¶‚É‚¢‚é
+        // å·¦ã«ã„ã‚‹æ™‚
         if (offset.x > 0)
         {
-            if (offset.x < offset.y) // ƒvƒŒƒCƒ„[‚ª¶ã‚É‚¢‚é
+            if (offset.x < offset.y) // ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãŒå·¦ä¸Šã«ã„ã‚‹æ™‚
             {
                 iconTarget.transform.localScale = new Vector3(-offset.y / scl + sclb, -offset.y / scl + sclb, 1);
                 if (iconTarget.transform.localScale.x <= -minSize)
@@ -112,7 +113,7 @@ public class Icon : MonoBehaviour
                     iconTarget.transform.localScale = new Vector3(minSize, minSize, 1);
                 }
             }
-            else if (-offset.x > offset.y) // ƒvƒŒƒCƒ„[‚ª‰Eã‚É‚¢‚é
+            else if (-offset.x > offset.y) // ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ãŒå³ä¸Šã«ã„ã‚‹æ™‚
             {
                 iconTarget.transform.localScale = new Vector3(-offset.y / scl - sclb, -offset.y / scl - sclb, 1);
                 if (iconTarget.transform.localScale.x >= minSize)
@@ -120,7 +121,7 @@ public class Icon : MonoBehaviour
                     iconTarget.transform.localScale = new Vector3(minSize, minSize, 1);
                 }
             }
-            else // ‚»‚êˆÈŠO
+            else // ãã‚Œä»¥å¤–
             {
                 iconTarget.transform.localScale = new Vector3(-offset.x / scl + sclb, -offset.x / scl + sclb, 1);
                 if (iconTarget.transform.localScale.x <= -minSize)

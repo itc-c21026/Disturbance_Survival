@@ -5,6 +5,10 @@ using UnityEngine;
 using System.IO;
 using System.Linq;
 
+/*-----------------------------------------
+CSVデータを読み込むプログラム
+-----------------------------------------*/
+
 public class CSVDataReader : MonoBehaviour
 {
     TextAsset csvFile; // CSVファイル

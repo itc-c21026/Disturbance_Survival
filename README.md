@@ -7,7 +7,7 @@
 ・花城英斗 / 2Dデザイナー・その他データ管理  
 
 ## ファイル構成
-・[Unityデータ](https://github.com/itc-c21026/Disturbance_Survival/tree/main/Disturbance%20Suvival)
+・[Unityデータ](https://github.com/itc-c21026/Disturbance_Survival/tree/main/Disturbance_Survival)
 
 ## 概要
 
@@ -15,16 +15,16 @@
 非対称対人脱出ゲーム
 
 ## プラットフォーム
-・[Android](https://github.com/itc-c21026/Disturbance_Survival/blob/main/Disturbance%20Suvival/DIsturbance_Survival.apk)  
-・[Windows](https://github.com/itc-c21026/Disturbance_Survival/blob/main/Disturbance%20Suvival/Disturbance_Survival_Windows.zip)
+・[Android](https://github.com/itc-c21026/Disturbance_Survival/blob/main/Disturbance_Survival/DIsturbance_Survival.apk)  
+・[Windows](https://github.com/itc-c21026/Disturbance_Survival/blob/main/Disturbance_Survival/Disturbance_Survival_Windows.zip)
 
 ## 使用言語
 C#
 
 ## 主なプログラム
-・[レーダーマップにアイコンを表示させるプログラム](https://github.com/itc-c21026/Disturbance_Survival/blob/main/Disturbance%20Suvival/Assets/Scripts/Icon.cs)  
-・[アイテムを制御するプログラム](https://github.com/itc-c21026/Disturbance_Survival/blob/main/Disturbance%20Suvival/Assets/Scripts/GetItem.cs)  
-・[アイテム使用時のプログラム](https://github.com/itc-c21026/Disturbance_Survival/blob/main/Disturbance%20Suvival/Assets/Scripts/ItemUse.cs)
+・[レーダーマップにアイコンを表示させるプログラム](https://github.com/itc-c21026/Disturbance_Survival/blob/main/Disturbance_Survival/Assets/Scripts/Icon.cs)  
+・[アイテムを制御するプログラム](https://github.com/itc-c21026/Disturbance_Survival/blob/main/Disturbance_Survival/Assets/Scripts/GetItem.cs)  
+・[アイテム使用時のプログラム](https://github.com/itc-c21026/Disturbance_Survival/blob/main/Disturbance_Survival/Assets/Scripts/ItemUse.cs)
 
 ## ゲームルール  
 ・全般  
